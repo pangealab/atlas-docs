@@ -1,6 +1,6 @@
 ![Intro](./docs/atlas.png)
 
-ServiceNow Scoped Application complatible with the Orlando Release. Implements a REST API foc registering application services using a JSON payload used to describe the services.
+ServiceNow Scoped Application complatible with the Orlando Release. Implements a REST API for registering application services using a JSON payload used to describe the services and their relationships.
 
 # Prerequisites
 
