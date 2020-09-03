@@ -6,6 +6,69 @@ ServiceNow Scoped Application complatible with the Orlando Release. Implements a
 
 * ServiceNow Orlando Instance
 
+## Install Plugins
+
+You will need to install several required PlugIns into your ServiceNow instance. 
+
+1. Login to your instance as  `Administrator`
+
+1. Select the **Plugins** Menu Option
+
+    ![Figure 4](docs/ServiceNowPluginSearch1.png)
+
+1. Continue to *Search*, *Install* and *Activate* each of the following Plugins:
+
+    >NOTE: It can take several minutes to *Activate* each Plugin
+
+    * Service Registration Plugins
+
+        * Explicit Roles com.glide.explicit_roles
+        * Discovery and Service Mapping Patterns sn_itom_pattern
+        * ITOM Optimization Licensing com.sn_itom_opt_licensing
+        * ITOM Guided Setup com.snc.guided_setup_metadata.itom
+        * ITOM Licensing sn_itom_license
+        * Service Mapping - Service Mapping com.snc.service-mapping
+        * Event Management and Service Mapping Core - com.snc.service-watch
+        * Event Management - com.glideapp.itom.snac
+        * Event Management Overview Homepage com.glideapp.report.em
+        * Performance Analytics - Content Pack - Event Management com.snc.pa.em
+        * Performance Analytics - Content Pack - Operational Intelligence com.snc.sa.metric.pa.content
+        * Alert Management Content com.em-alert-mgmt-content
+        * Cloud Management com.snc.cloud.mgmt
+
+## Create a Service Account for your APM
+
+   * Create a User (e.g. `grafana`)
+   * Grant the following Roles:
+       * snc_internal
+       * evt_mgmt_integration
+
+## Install the Atlas Application Dependencies
+
+1. Deploy the Following Dependencies from the `/servicenow` folder
+
+    * XML File Imports:
+
+        * DeleteAllGrafanaAlertsFixScript.xml - Utility to delete old Grafana Alarms
+        * FindSysIDFixScript.xml - Utility to find Objects by SysID
+        * CreateOrUpdateITServiceScriptInclude.xml - Changed to disable removal of outdated manual endpoints
+        * LabsAtlasScriptInclude.xml - Wrapper for BusinessServiceManager not available from application scope
+        * AlertManagementRulesExport.xml - Alert Management Rule to create an Incident automatically from the Alert
+
+    * Update Sets:
+
+        * TableIdentityRulesUpdateSet.xml - Table Identity Rules Update Set to set uniquenes for Application & HTTPs Endpoints Tables
+        * CreateIncidentFromAlertFlowUpdateSet.xml - Flow Designer Workflow to create an Incident from an Alert
+
+## Install the Atlas Scoped Application
+
+1. Navigate to Studio
+
+1. Import Application from Source Control as follows:
+
+    * URL: https://github.com/pangealab/atlas.git
+    * Branch: master
+
 # Operations
 
 ## Register Service
