@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2020-06-11 15:26:29">
+<em_alert_management_rule action="INSERT_OR_UPDATE">
+<active>false</active>
+<additional_info/>
+<alert_filter table="em_alert">maintenance=false^incidentISEMPTY^source=Microsoft Azure<item goto="false" or="false" field="maintenance" endquery="false" value="false" operator="=" newquery="false"/>
+<item goto="false" or="false" field="incident" endquery="false" value="" operator="ISEMPTY" newquery="false"/>
+<item goto="false" or="false" field="source" endquery="false" value="Microsoft Azure" operator="=" newquery="false"/>
+</alert_filter>
+<automatic_execution_setting>1</automatic_execution_setting>
+<description>Modifed OOB rule. Create an incident for all Azure alerts that are not in maintenance state.</description>
+<error_msg/>
+<incident_template display_value=""/>
+<kb display_value=""/>
+<migrated_from display_value=""/>
+<multiple_alert_rules>1</multiple_alert_rules>
+<name>Create Incident for Azure Alert</name>
+<order>100</order>
+<overwrite_template display_value=""/>
+<state>2</state>
+<submit_counter>11</submit_counter>
+<sys_class_name>em_alert_management_rule</sys_class_name>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-06-11 14:00:51</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>b0d3bc9edbdd50100b419cfadb961959</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_name>Create Incident for Azure Alert</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>em_alert_management_rule_b0d3bc9edbdd50100b419cfadb961959</sys_update_name>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-06-11 15:26:21</sys_updated_on>
+<type>incident</type>
+</em_alert_management_rule>
+</unload>

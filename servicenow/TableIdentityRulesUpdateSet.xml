@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-04-06 16:13:12">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Release 1</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>bf58d9051bcc9c5057e38775cc4bcb88</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-04-06 16:13:12</sys_created_on>
+<sys_id>803991851bcc9c5057e38775cc4bcb6b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-04-06 16:13:12</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cmdb_identifier_be01894ddb358410e1ff9258db96192d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_identifier"><cmdb_identifier action="INSERT_OR_UPDATE"><active>true</active><applies_to>cmdb_ci_service_discovered</applies_to><description/><independent>true</independent><name>Application Service</name><sys_created_by>ewilliams</sys_created_by><sys_created_on>2019-12-16 18:06:55</sys_created_on><sys_id>be01894ddb358410e1ff9258db96192d</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>aangelo</sys_updated_by><sys_updated_on>2020-04-06 16:11:28</sys_updated_on></cmdb_identifier></record_update>]]></payload>
+<payload_hash>-1439482322</payload_hash>
+<remote_update_set display_value="Release 1">803991851bcc9c5057e38775cc4bcb6b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-04-06 16:13:12</sys_created_on>
+<sys_id>003991851bcc9c5057e38775cc4bcb6c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1715042d1850000001</sys_recorded_at>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-04-06 16:13:12</sys_updated_on>
+<table/>
+<target_name>cmdb_ci_service_discovered</target_name>
+<type>Identifier</type>
+<update_domain>global</update_domain>
+<update_guid>22c8d945d2cc9c50b706db7ebc6f2bd5</update_guid>
+<update_guid_history>22c8d945d2cc9c50b706db7ebc6f2bd5:-1439482322,86218d4d1035841096c60de33d80d133:-1439482322</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cmdb_identifier_4b1deab3ff100200ab8fffffffffffdf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_identifier"><cmdb_identifier action="INSERT_OR_UPDATE"><active>true</active><applies_to>cmdb_ci_endpoint_http</applies_to><description>Updated SW:HTTP(S) </description><independent>true</independent><name>HTTP(S)</name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 07:58:29</sys_created_on><sys_id>4b1deab3ff100200ab8fffffffffffdf</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>aangelo</sys_updated_by><sys_updated_on>2020-04-06 16:11:02</sys_updated_on></cmdb_identifier></record_update>]]></payload>
+<payload_hash>-1021478802</payload_hash>
+<remote_update_set display_value="Release 1">803991851bcc9c5057e38775cc4bcb6b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-04-06 16:13:12</sys_created_on>
+<sys_id>083991851bcc9c5057e38775cc4bcb6b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17150426be00000001</sys_recorded_at>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-04-06 16:13:12</sys_updated_on>
+<table/>
+<target_name>cmdb_ci_endpoint_http</target_name>
+<type>Identifier</type>
+<update_domain>global</update_domain>
+<update_guid>d8b8d545b2cc9c50e6153aa9f232616a</update_guid>
+<update_guid_history>d8b8d545b2cc9c50e6153aa9f232616a:-1021478802,600a4209ce7d8410a4ddd73f791c4056:-1021478802,ac0a4209967d8410b061ac3227f03554:1597239215</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cmdb_identifier_entry_cd839515973212008f1c0301b3ac4a1e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_identifier_entry"><cmdb_identifier_entry action="INSERT_OR_UPDATE"><active>false</active><allow_fallback>false</allow_fallback><allow_null_attribute>true</allow_null_attribute><attributes>name,port,protocol,host,host_name,url</attributes><condition/><exact_count_match>false</exact_count_match><hybrid_entry_ci_criterion_attributes/><identifier display_value="cmdb_ci_endpoint_http">4b1deab3ff100200ab8fffffffffffdf</identifier><order>110</order><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-14 09:53:39</sys_created_on><sys_id>cd839515973212008f1c0301b3ac4a1e</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>aangelo</sys_updated_by><sys_updated_on>2020-04-06 16:10:52</sys_updated_on><table>cmdb_ci_endpoint_http</table></cmdb_identifier_entry></record_update>]]></payload>
+<payload_hash>-1478075285</payload_hash>
+<remote_update_set display_value="Release 1">803991851bcc9c5057e38775cc4bcb6b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-04-06 16:13:12</sys_created_on>
+<sys_id>483991851bcc9c5057e38775cc4bcb6c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>171504243250000001</sys_recorded_at>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-04-06 16:13:12</sys_updated_on>
+<table>cmdb_ci_endpoint_http</table>
+<target_name>cd839515973212008f1c0301b3ac4a1e</target_name>
+<type>Identifier Entry</type>
+<update_domain>global</update_domain>
+<update_guid>31a89545bacc9c5018b80358fdc2a663</update_guid>
+<update_guid_history>31a89545bacc9c5018b80358fdc2a663:-1478075285,4188dd058dcc9c50e0f409adb1757fc0:-1478075285</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cmdb_identifier_entry_9721cd4ddb358410e1ff9258db96193e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_identifier_entry"><cmdb_identifier_entry action="INSERT_OR_UPDATE"><active>true</active><allow_fallback>false</allow_fallback><allow_null_attribute>false</allow_null_attribute><attributes>name</attributes><condition/><exact_count_match>false</exact_count_match><hybrid_entry_ci_criterion_attributes/><identifier display_value="cmdb_ci_service_discovered">be01894ddb358410e1ff9258db96192d</identifier><order>100</order><sys_created_by>ewilliams</sys_created_by><sys_created_on>2019-12-16 18:07:13</sys_created_on><sys_id>9721cd4ddb358410e1ff9258db96193e</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>aangelo</sys_updated_by><sys_updated_on>2020-04-06 16:11:20</sys_updated_on><table>cmdb_ci_service_discovered</table></cmdb_identifier_entry></record_update>]]></payload>
+<payload_hash>-2055655933</payload_hash>
+<remote_update_set display_value="Release 1">803991851bcc9c5057e38775cc4bcb6b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-04-06 16:13:12</sys_created_on>
+<sys_id>843991851bcc9c5057e38775cc4bcb6c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1715042b28f0000001</sys_recorded_at>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-04-06 16:13:12</sys_updated_on>
+<table>cmdb_ci_service_discovered</table>
+<target_name>9721cd4ddb358410e1ff9258db96193e</target_name>
+<type>Identifier Entry</type>
+<update_domain>global</update_domain>
+<update_guid>ecc8594503cc9c5009ebe182d4c90ad9</update_guid>
+<update_guid_history>ecc8594503cc9c5009ebe182d4c90ad9:-2055655933,5a318d4dd03584101df47c331343593c:-2055655933</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cmdb_identifier_entry_471deab3ff100200ab8fffffffffffe0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_identifier_entry"><cmdb_identifier_entry action="INSERT_OR_UPDATE"><active>true</active><allow_fallback>false</allow_fallback><allow_null_attribute>true</allow_null_attribute><attributes>port,protocol,ip_address,host,host_name,url</attributes><condition/><exact_count_match>false</exact_count_match><hybrid_entry_ci_criterion_attributes/><identifier display_value="cmdb_ci_endpoint_http">4b1deab3ff100200ab8fffffffffffdf</identifier><order>100</order><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 07:58:29</sys_created_on><sys_id>471deab3ff100200ab8fffffffffffe0</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>aangelo</sys_updated_by><sys_updated_on>2020-04-06 16:10:39</sys_updated_on><table>cmdb_ci_endpoint_http</table></cmdb_identifier_entry></record_update>]]></payload>
+<payload_hash>-305634148</payload_hash>
+<remote_update_set display_value="Release 1">803991851bcc9c5057e38775cc4bcb6b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-04-06 16:13:12</sys_created_on>
+<sys_id>c03991851bcc9c5057e38775cc4bcb6c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>171504210af0000001</sys_recorded_at>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-04-06 16:13:12</sys_updated_on>
+<table>cmdb_ci_endpoint_http</table>
+<target_name>471deab3ff100200ab8fffffffffffe0</target_name>
+<type>Identifier Entry</type>
+<update_domain>global</update_domain>
+<update_guid>aa98d14599cc9c503da42b33a7e40c57</update_guid>
+<update_guid_history>aa98d14599cc9c503da42b33a7e40c57:-305634148,ae98d145b0cc9c50385100691fb99755:-305634148</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

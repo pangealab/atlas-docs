@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2020-06-04 14:11:14">
+<sys_script_fix action="INSERT_OR_UPDATE">
+<active>true</active>
+<before>false</before>
+<description>Delete All Grafana Alerts</description>
+<flush_cache>false</flush_cache>
+<name>Delete All Grafana Alerts</name>
+<record_for_rollback>false</record_for_rollback>
+<run_once>true</run_once>
+<script><![CDATA[// ---------- Begin configuration section ---------- //
+var tableName = 'em_alert';
+var queryFilter = 'source=Grafana';
+var simulationMode = false;
+// ---------- End configuration section ---------- //
+var gr = new GlideRecord(tableName);
+gr.addEncodedQuery(queryFilter);
+gr.query();
+while (gr.next()) {
+    var recordDisplayName = gr.getDisplayValue();
+    if (simulationMode) {
+        gs.debug('Potentially deleted record: ' + recordDisplayName);
+    } else {
+        if (gr.deleteRecord()) {
+            gs.debug('SUCCESS deleting record: ' + recordDisplayName);
+        } else {
+            gs.debug('FAILURE deleting record: ' + recordDisplayName);
+        }
+    }
+}]]></script>
+<sys_class_name>sys_script_fix</sys_class_name>
+<sys_created_by>aangelo</sys_created_by>
+<sys_created_on>2020-01-14 17:21:21</sys_created_on>
+<sys_id>ecbc8212dbda4414e1ff9258db96198f</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>Delete All Grafana Alerts</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_fix_ecbc8212dbda4414e1ff9258db96198f</sys_update_name>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2020-06-04 14:11:03</sys_updated_on>
+<unloadable>false</unloadable>
+</sys_script_fix>
+</unload>

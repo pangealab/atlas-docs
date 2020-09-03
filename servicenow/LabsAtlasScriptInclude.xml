@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2020-03-31 01:18:40">
+<sys_script_include action="INSERT_OR_UPDATE">
+<access>public</access>
+<active>true</active>
+<api_name>global.LabsAtlas</api_name>
+<caller_access/>
+<client_callable>false</client_callable>
+<description>Labs Atlas Global Scope Library</description>
+<name>LabsAtlas</name>
+<script><![CDATA[var LabsAtlas = Class.create();
+
+LabsAtlas.prototype = {
+
+    // Constructor
+    initialize: function () {},
+
+    // Add Manual Connection using the BSM API (BusinessServiceManager)
+    addManualConnection: function (services,serviceIDs,endpointIDs) {
+
+        // Constants
+        var ENDPOINTS = "cmdb_ci_endpoint_http";
+
+        try {
+
+            var bsm = new SNC.BusinessServiceManager();
+
+            for (var n = 0; n < services.length; n++) {
+                service = services[n];
+                var epGr = new GlideRecord(ENDPOINTS);
+                found = epGr.get(endpointIDs[service.name]);
+
+                log("Calling bsm...");
+
+                bsm.addEntryPointWithoutStartDiscovery(serviceIDs[service.name], epGr);
+
+            }
+
+        } catch (e) {
+            error(e.message);
+        }
+
+    },
+
+    type: 'LabsAtlas'
+};
+
+// Log INFO
+function log(message) {
+    gs.info(message);
+}
+
+// Log ERROR
+function error(message) {
+    gs.error(message);
+}]]></script>
+<sys_class_name>sys_script_include</sys_class_name>
+<sys_created_by>tcullen</sys_created_by>
+<sys_created_on>2019-12-17 23:07:01</sys_created_on>
+<sys_id>459d8391dbfd08103b4a90b6db96192e</sys_id>
+<sys_mod_count>35</sys_mod_count>
+<sys_name>LabsAtlas</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_include_459d8391dbfd08103b4a90b6db96192e</sys_update_name>
+<sys_updated_by>aangelo</sys_updated_by>
+<sys_updated_on>2019-12-19 05:54:55</sys_updated_on>
+</sys_script_include>
+</unload>
