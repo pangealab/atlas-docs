@@ -1,6 +1,10 @@
 ![Intro](./docs/atlas.png)
 
-ServiceNow Scoped Application complatible with the Orlando Release. Implements a REST API foc registering application services using a JSON payload used to describe the services. 
+ServiceNow Scoped Application complatible with the Orlando Release. Implements a REST API foc registering application services using a JSON payload used to describe the services.
+
+# Prerequisites
+
+* ServiceNow Orlando Instance
 
 # Operations
 
@@ -37,7 +41,7 @@ curl -X POST -H "Content-Type: application/json" $NOW_API --user YOURUSERID:YOUR
 
 # Example Payloads
 
-* bookinfo.json
+## bookinfo.json
 
     ```
     {
@@ -108,50 +112,7 @@ curl -X POST -H "Content-Type: application/json" $NOW_API --user YOURUSERID:YOUR
     }
     ```
 
-* startreck.json
-
-    ```
-    {
-    "name": "USS Enteprise NCC-1701",
-    "comments": "NCC-1701 Constitution Class Starship",
-    "services": [{
-            "name": "ncc1701",
-            "uri": "http://ncc1701.net"
-        },
-        {
-            "name": "weapons",
-            "uri": "http://weapons.ncc1701.net"
-        },
-        {
-            "name": "phasers",
-            "uri": "http://phasers.ncc1701.net"
-        },
-        {
-            "name": "lifesuppport",
-            "uri": "http://lifesupport.ncc1701.net"
-        }
-    ],
-    "relationships": [{
-            "parent": null,
-            "child": "ncc1701"
-        },
-        {
-            "parent": "ncc1701",
-            "child": "weapons"
-        },
-        {
-            "parent": "weapons",
-            "child": "phasers"
-        },
-        {
-            "parent": "ncc1701",
-            "child": "lifesuppport"
-        }
-    ]
-    }
-    ```
-
-  * alert1.json
+  ## alert1.json
 
   ```
   {
